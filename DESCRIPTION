@@ -1,0 +1,13 @@
+Package: rNetSNE
+Type: Package
+Title: Run Net-SNE on R
+Version: 0.1.0
+Author: Florian Specque
+Description: Allows you to run Net-SNE (and Bht-SNE) on R.
+    Warnings: requires to have the C++ implementation of Net-SNE installed
+Requirment: C++ implementation of Net-SNE installed and functional.
+License: <3
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: no
+Packaged: 2018-07-31 08:27:17 UTC; fspecque
