@@ -75,7 +75,7 @@ plot(Result$`Net-SNE (Projection)`,pch=21,bg=string.to.colors(labels_2),
      xaxt="n",yaxt="n",bty="n",xlab="Net-SNE 1",ylab="Net-SNE 2")
 legend("topright",legend = c("Cluster 1","Cluster 2","Cluster 3"),col=c("red","green","blue"),pch=16,bty="n")
 ```
-![](Netsne_train.jpg)
+![](Netsne_train.jpg = 250x250)
 
 
 
