@@ -78,5 +78,9 @@ legend("topright",legend = c("Cluster 1","Cluster 2","Cluster 3"),col=c("red","g
 <img src="Netsne_train.jpg" alt="drawing" width="500px"/>
 <img src="Netsne_test.jpg" alt="drawing" width="500px"/>
 
+### Reference
+
+[1] Neural Data Visualization for Scalable and Generalizable Single Cell Analysis" Hyunghoon Cho, Bonnie Berger, and Jian Peng
+Cell Systems, 2018
 
 
