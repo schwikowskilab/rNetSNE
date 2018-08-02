@@ -63,7 +63,18 @@ Result=R_netSNE(to.run = c("Compute.sim", "BhtSNE","NetSNE.train","NetSNE.projec
                 name.bhtSNE.output.dir = "Bhtsne_ref_embed", name.netSNE.output.dir = "Netsne_out")
 ```
 
-
+Lastly we can visually inspect the results of the training and projection of new points 
+```r
+library(fifer) ##Good library, you should use it !
+plot(Result$`Bht-SNE`,pch=21,bg=string.to.colors(labels_1,rainbow(3)[1:2]),
+     xlim=c(-55,250),ylim=c(-65,43),main="Training dataset",
+     xaxt="n",yaxt="n",bty="n",xlab="Net-SNE 1",ylab="Net-SNE 2")
+legend("topright",legend = c("Cluster 1","Cluster 2"),col=c("red","green"),pch=16,bty="n")
+plot(Result$`Net-SNE (Projection)`,pch=21,bg=string.to.colors(labels_2),
+     xlim=c(-55,250),ylim=c(-65,43),main="Test dataset",
+     xaxt="n",yaxt="n",bty="n",xlab="Net-SNE 1",ylab="Net-SNE 2")
+legend("topright",legend = c("Cluster 1","Cluster 2","Cluster 3"),col=c("red","green","blue"),pch=16,bty="n")
+```
 
 
 
